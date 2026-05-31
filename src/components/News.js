@@ -13,11 +13,11 @@ function News() {
   const [loading, setLoading] = useState(true);
   const [lastRefresh, setLastRefresh] = useState(0);
 
-  useEffect(() => {
-    fetchRssNews();
-    const interval = setInterval(fetchRssNews, 120000);
-    return () => clearInterval(interval);
-  }, []);
+useEffect(() => {
+  fetchRssNews();
+  const interval = setInterval(fetchRssNews, 120000);
+  return () => clearInterval(interval);
+}, []); // eslint-disable-line react-hooks/exhaustive-deps
 
   const parseRss = (xmlString) => {
     const parser = new DOMParser();
