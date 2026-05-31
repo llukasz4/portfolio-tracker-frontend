@@ -2,19 +2,13 @@ import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import closeIcon from '../Close.png';
 import stockIcon from '../stock.png';
-import bg2 from '../ayyo.png';
-import bg3 from '../tlo2.png';
 
-
-import bg6 from '../tlo6.jpg';
-import bg7 from '../tlo8.jpg';
-import bg8 from '../tlo12.jpg';
-import bg9 from '../tlo11.jpg';
 
 
 
 const API = 'http://localhost:8080';
 const FINNHUB_KEY = process.env.REACT_APP_FINNHUB_KEY;
+console.log('Klucz:', FINNHUB_KEY);
 
 window.addEventListener('error', function(e) {
   if (e.message && e.message.includes('ResizeObserver')) {
@@ -23,7 +17,7 @@ window.addEventListener('error', function(e) {
 });
 
 function PortfolioLeft({ onSelectStock, selectedStock, bgIndex, panelColor, onAlert, onStocksLoaded }) {
-  const backgrounds = [bg2, bg3, bg6, bg7, bg8, bg9];
+  
   const [stocks, setStocks] = useState([]);
   const [positions, setPositions] = useState([]);
   const [totalValue, setTotalValue] = useState(0);
@@ -42,7 +36,7 @@ useEffect(() => {
   fetchData();
   const interval = setInterval(fetchData, 5000);
   return () => clearInterval(interval);
-}, []);
+}, []); // eslint-disable-line react-hooks/exhaustive-deps
 
 
 

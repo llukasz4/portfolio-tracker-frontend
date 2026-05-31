@@ -60,17 +60,7 @@ const updateChart = (stockId, data) => {
 
 const [leftPanel, setLeftPanel] = useState({ x: 40, y: 40, width: 420, height: 600 });
 const backgrounds = [bg2, bg3, bg6, bg7, bg8, bg9];
-const navColors = [
-  '#2d1a0e', // tlo1
-  '#1a2a3a', // ayyo
-  '#1a3a2a', // tlo2
-  '#2a1a3a', // tlo3
-  '#3a2a1a', // tlo4
-  '#1a1a3a', // tlo6
-  '#3a1a1a', // tlo8
-  '#1a3a3a', // tlo12
-];
-const [bgIndex, setBgIndex] = useState(1);
+const [bgIndex, setBgIndex] = useState(3);
 const panelColors = [
   'rgba(70, 90, 120, 0.88)',   // tlo2
   'rgba(80, 60, 40, 0.88)',    // ayyo
