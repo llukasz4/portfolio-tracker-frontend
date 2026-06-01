@@ -2,7 +2,7 @@ import React, { useState, useEffect, useRef } from 'react';
 import axios from 'axios';
 import { createChart } from 'lightweight-charts';
 
-const API = 'http://localhost:8080';
+const API = 'https://portfolio-tracker-production-36ce.up.railway.app';
 
 function PortfolioRight({ selectedStock }) {
   const [currentInterval, setCurrentInterval] = useState('D');
