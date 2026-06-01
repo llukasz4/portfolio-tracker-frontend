@@ -6,7 +6,7 @@ import stockIcon from '../stock.png';
 
 
 
-const API = 'http://localhost:8080';
+const API = 'https://portfolio-tracker-production-36ce.up.railway.app';
 const FINNHUB_KEY = process.env.REACT_APP_FINNHUB_KEY;
 console.log('Klucz:', FINNHUB_KEY);
 
@@ -327,3 +327,4 @@ useEffect(() => {
 }
 
 export default PortfolioLeft;
+// force rebuild
