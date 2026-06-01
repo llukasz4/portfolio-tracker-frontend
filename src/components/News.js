@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 
-const API = 'http://localhost:8080';
+const API = 'https://portfolio-tracker-production-36ce.up.railway.app';
 
 const RSS_FEEDS = [
   'https://feeds.finance.yahoo.com/rss/2.0/headline?s=AAPL,TSLA,MSFT,GOOGL,AMZN&region=US&lang=en-US',
