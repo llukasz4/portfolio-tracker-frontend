@@ -9,7 +9,7 @@ import './App.css';
 import bullGif from './bull.gif';
 import bearGif from './bear.gif';
 import alarmSound from './alarm.mp3';
-import bg2 from './ayyo.png';
+import bg2 from './tlo.png';
 import bg3 from './tlo2.png';
 import Scanner from './components/Info';
 
